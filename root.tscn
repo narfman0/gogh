@@ -16,6 +16,7 @@ scale = Vector2( 1, 1 )
 
 [node name="dialog" parent="CanvasLayer" instance=ExtResource( 2 )]
 
+language = "res://dialog.lan"
 show_debug_messages = false
 
 
