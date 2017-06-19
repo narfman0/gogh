@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://root.gd" type="Script" id=1]
 [ext_resource path="res://addons/SMRT/dialog.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dialogBackground.png" type="Texture" id=3]
+[ext_resource path="res://background.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,7 +18,21 @@ scale = Vector2( 1, 1 )
 
 [node name="dialog" parent="CanvasLayer" instance=ExtResource( 2 )]
 
+margin/left = 433.0
+margin/top = 527.0
+margin/right = 271.0
+margin/bottom = 9.0
+texture = ExtResource( 3 )
+patch_margin/right = 4
 language = "res://dialog.lan"
 show_debug_messages = false
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="background" type="Sprite" parent="Node2D"]
+
+transform/pos = Vector2( 638.066, 517.962 )
+transform/scale = Vector2( 1.5996, 1.73363 )
+texture = ExtResource( 4 )
 
 
